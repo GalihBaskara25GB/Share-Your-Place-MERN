@@ -3,6 +3,7 @@ import PlaceItem from './PlaceItem'
 import Card from '../../shared/components/UIElements/Card'
 
 import './PlaceList.css'
+import Button from '../../shared/components/FormElements/Button'
 
 const PlaceList = props => {
     if(props.items.length === 0) {
@@ -10,7 +11,7 @@ const PlaceList = props => {
             <div className="place-list center">
                 <Card>
                     <h2>No Places Yet.</h2>
-                    <button>Share New Place</button>
+                    <Button to="/places/new">Share New Place</Button>
                 </Card>
             </div>
         )
